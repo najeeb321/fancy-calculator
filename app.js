@@ -25,13 +25,12 @@ switcher.addEventListener('click', function() {
     console.log('current class name: ' + className);
 });
 
-num1 = document.getElementById("num1").value;
-num2 = document.getElementById("num2").value;
-
 document.getElementById("sum").addEventListener("click", displaySum);
 
 function displaySum() {
-
+    
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
     var sum = new Number(num1) + new Number(num2);
     document.getElementById("sumAns").innerHTML = sum;
     console.log('adding');
@@ -41,6 +40,8 @@ document.getElementById("sub").addEventListener("click", displayDif);
 
 function displayDif() {
 
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
     var sub = new Number(num1) - new Number(num2);
     document.getElementById("subAns").innerHTML = sub;
     console.log('subtracting');
@@ -50,6 +51,8 @@ document.getElementById("mul").addEventListener("click", displayMul);
 
 function displayMul() {
 
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
     var mul = new Number(num1) * new Number(num2);
     document.getElementById("mulAns").innerHTML = mul;
     console.log('multiplying');
@@ -59,6 +62,8 @@ document.getElementById("div").addEventListener("click", displayDiv);
 
 function displayDiv() {
 
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
     var div = new Number(num1) / new Number(num2);
     document.getElementById("divAns").innerHTML = div;
     console.log('dividing');
