@@ -25,7 +25,7 @@ switcher.addEventListener('click', function() {
     console.log('current class name: ' + className);
 });
 
-document.getElementById("sum").addEventListener("click", displaySum);
+document.getElementById("sum").addEventListener("touchstart", displaySum);
 
 function displaySum() {
     
