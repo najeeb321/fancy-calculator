@@ -1,0 +1,92 @@
+/*style for body
+body{ /*property name: value*//*
+    font-family: monospace;
+}
+*/
+/*style for Unordered List
+ul{ /*property name: value*//*
+    font-family: helvetica;
+}
+*/
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+/*
+#msg{
+    font-family: monospace;
+}
+*/
+
+/*root to define a set of global CSS variables*/
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --lime: #00FF00;
+    --aqua: #00FFFF;
+    --red: #FF0000;
+
+}
+.light-theme{
+    --bg: var(--aqua);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--aqua);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--aqua);
+    --btnBg: var(--aqua);
+    --btnFontColor: var(--black);
+}
+
+/*Universal selector that applies to all page elements*/
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background: var(--bg);
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+/*pseudo-class selector: none to eliminate a recatangle outline when button selected*/
+.btn:focus{ outline-style: none; }
+
+
+.myBtn{
+    position: absolute;
+    bottom: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.clr{
+    position: absolute;
+    bottom: 10px;
+    left: 225px;
+    height: 50px;
+    width: 75px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
