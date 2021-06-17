@@ -31,7 +31,7 @@ num2 = document.getElementById("num2").value;
 document.getElementById("sum").addEventListener("click", displaySum);
 
 function displaySum() {
-    alert( 'Hello, world!' );
+    
     var sum = new Number(num1) + new Number(num2);
     document.getElementById("sumAns").innerHTML = sum;
     console.log('adding');
