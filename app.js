@@ -29,11 +29,8 @@ document.getElementById("sum").addEventListener("click", displaySum);
 
 function displaySum() {
     
-<<<<<<< HEAD
     num1 = document.getElementById("num1").value;
     num2 = document.getElementById("num2").value;
-=======
->>>>>>> c353326a2dfda9229f8819904cf6f43b18d88aa4
     var sum = new Number(num1) + new Number(num2);
     document.getElementById("sumAns").innerHTML = sum;
     console.log('adding');
